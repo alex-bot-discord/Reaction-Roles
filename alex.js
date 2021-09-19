@@ -1,11 +1,5 @@
 ///Alex Bot - By Gaber Elsayed
 
-const Enmap = require("enmap");
-
-const db = new Enmap({name: "reaction"});
-
-const bot = client;
-
 bot.on("raw", async event => {
   const eventName = event.t;
   if(eventName === "MESSAGE_REACTION_ADD") {
